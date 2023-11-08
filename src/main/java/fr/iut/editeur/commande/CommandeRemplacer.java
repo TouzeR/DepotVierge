@@ -14,7 +14,7 @@ public class CommandeRemplacer extends CommandeDocument{
             System.err.println("Format attendu : remplacer;depart;fin:chaine");
             return;
         }
-        int debut=Integer.parseInt(parameters[1]);
+        int debut=Integer.parseInt(parameters[2]);
         int fin=Integer.parseInt(parameters[3]);
         String texte=parameters[4];
         this.document.remplacer(debut,fin,texte);
