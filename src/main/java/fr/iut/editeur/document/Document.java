@@ -34,4 +34,18 @@ public class Document {
         String maj= texte.substring(start,end).toUpperCase();
         remplacer(start,end,maj);
     }
+    public void effacer(int start,int end){
+        remplacer(start,end,"");
+    }
+
+    public void clear(){
+        effacer(0,texte.length());
+    }
+
+    public void inserer(int nb, String text) {
+        String left=texte.substring(0,nb+1);
+        String right=texte.substring(nb+1);
+        texte=left+text+right;
+    }
+
 }
