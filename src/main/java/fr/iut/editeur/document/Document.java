@@ -34,4 +34,11 @@ public class Document {
         String maj= texte.substring(start,end).toUpperCase();
         remplacer(start,end,maj);
     }
+
+    public void inserer(int nb, String text) {
+        String left=texte.substring(0,nb+1);
+        String right=texte.substring(nb+1);
+        texte=left+text+right;
+    }
+
 }
