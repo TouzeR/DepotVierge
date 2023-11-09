@@ -47,5 +47,8 @@ public class Document {
         String right=texte.substring(nb+1);
         texte=left+text+right;
     }
+    public void description(String commande,String description){
+        texte=commande+" : "+description;
+    }
 
 }

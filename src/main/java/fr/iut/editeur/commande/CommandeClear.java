@@ -9,7 +9,16 @@ public class CommandeClear extends CommandeDocument{
 
     @Override
     public void executer() {
-        this.document.clear();
-        super.executer();
+        boolean check=description();
+        if (!check) {
+            this.document.clear();
+            super.executer();
+        }
     }
+
+    @Override
+    public String getDescriptionCommande() {
+        return "efface la totalité du texte du document";
+    }
+
 }
