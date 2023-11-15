@@ -14,4 +14,4 @@
           with:
             java-version: 17
         - name : tests
-          uses: mvn-test
+          uses: mvn test
