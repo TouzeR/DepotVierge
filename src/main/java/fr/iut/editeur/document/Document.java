@@ -2,6 +2,7 @@ package fr.iut.editeur.document;
 
 public class Document {
 
+
     private String texte;
 
     public Document() {
@@ -16,9 +17,19 @@ public class Document {
         this.texte = texte;
     }
 
+    /**
+     *
+     * @param texte
+     */
+
     public void ajouter(String texte) {
         this.texte += texte;
     }
+
+    /**
+     *
+     * @return
+     */
 
     @Override
     public String toString() {
